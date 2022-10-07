@@ -49,19 +49,3 @@ btnHold.addEventListener("click", () => {
     // 2. Reset currentScore and switch active player
     switchActivePlayer();
 });
-
-btnNew.addEventListener("click", () => {
-    dice.classList.add("hidden");
-    score = [0,0];
-    currentScore = 0;
-
-    document.querySelector("#score--0").textContent = 0;
-    document.querySelector("#score--1").textContent = 0;
-    document.querySelector("#current--0").textContent = 0;
-    document.querySelector("#current--1").textContent = 0;
-
-    if (activePlayer) {
-        document.querySelector(".player--0").classList.toggle("player--active");
-        document.querySelector(".player--1").classList.toggle("player--active");
-    }
-});
